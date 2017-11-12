@@ -64,7 +64,7 @@
       header {
         text-align: center;
         background-color: red;
-        background: url("/static/img/header.jpg");
+        background: url("{{url_for('static', filename='img/header.jpg')}}");
         background-size: cover;
         color: white;
       }
@@ -91,7 +91,7 @@
   </head>
   <body>
     <header>
-      <img src="/static/img/jy_profile.jpg" alt="profile" width="150px">
+      <img src="{{url_for('static', filename='img/jy_profile.jpg')}}" alt="profile" width="150px">
       <h1>Jon Nixon</h1>
       <div class="container">
         <a href="#home">Home</a>
